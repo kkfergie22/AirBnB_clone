@@ -3,7 +3,7 @@
 """
 import unittest
 # import json
-import pep8
+import pycodestyle
 from models import state
 from models.state import State
 from models.base_model import BaseModel
@@ -37,7 +37,7 @@ class TestStateClass(unittest.TestCase):
 
     def test_pep8(self):
         """ test base and test_base for pep8 conformance """
-        style = pep8.StyleGuide(quiet=True)
+        style = pycodestyle.StyleGuide(quiet=True)
         file1 = 'models/state.py'
         file2 = 'tests/test_models/test_state.py'
         result = style.check_files([file1, file2])

@@ -3,7 +3,7 @@
 """
 import unittest
 # import json
-import pep8
+import pycodestyle
 from models import review
 from models.review import Review
 from models.base_model import BaseModel
@@ -38,8 +38,8 @@ class TestReviewClass(unittest.TestCase):
             self.assertTrue(len(func.__doc__) > 0)
 
     def test_pep8(self):
-        """ test base and test_base for pep8 conformance """
-        style = pep8.StyleGuide(quiet=True)
+        """ test base and test_base for pycodestyle conformance """
+        style = pycodestyle.StyleGuide(quiet=True)
         file1 = 'models/review.py'
         file2 = 'tests/test_models/test_review.py'
         result = style.check_files([file1, file2])

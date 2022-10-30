@@ -3,7 +3,7 @@
 """
 import unittest
 # import json
-import pep8
+import pycodestyle
 from io import StringIO
 from unittest.mock import patch
 from console import HBNBCommand
@@ -48,7 +48,7 @@ class TestConsoleClass(unittest.TestCase):
 
     def test_pep8(self):
         """ test base and test_base for pep8 conformance """
-        style = pep8.StyleGuide(quiet=True)
+        style = pycodestyle.StyleGuide(quiet=True)
         file1 = 'console.py'
         file2 = 'tests/test_console.py'
         result = style.check_files([file1, file2])

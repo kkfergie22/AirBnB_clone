@@ -2,7 +2,7 @@
 """Unit test for the file storage class
 """
 import unittest
-import pep8
+import pycodestyle
 from models.engine import file_storage
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
@@ -48,7 +48,7 @@ class TestFileStorageClass(unittest.TestCase):
 
     def test_pep8(self):
         """ test base and test_base for pep8 conformance """
-        style = pep8.StyleGuide(quiet=True)
+        style = pycodestyle.StyleGuide(quiet=True)
         file1 = 'models/engine/file_storage.py'
         file2 = 'tests/test_models/test_engine/test_file_storage.py'
         result = style.check_files([file1, file2])

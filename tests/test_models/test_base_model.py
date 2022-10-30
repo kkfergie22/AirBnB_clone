@@ -3,7 +3,7 @@
 """
 import unittest
 # import json
-import pep8
+import pycodestyle
 from datetime import datetime
 # from io import StringIO
 # from unittest.mock import patch
@@ -50,7 +50,7 @@ class TestBaseClass(unittest.TestCase):
 
     def test_pep8(self):
         """ test base and test_base for pep8 conformance """
-        style = pep8.StyleGuide(quiet=True)
+        style = pycodestyle.StyleGuide(quiet=True)
         file1 = 'models/base_model.py'
         file2 = 'tests/test_models/test_base_model.py'
         result = style.check_files([file1, file2])
