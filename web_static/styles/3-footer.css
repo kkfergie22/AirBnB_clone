@@ -8,5 +8,6 @@ footer {
 }
 footer p {
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
+    line-height: auto;
 }
