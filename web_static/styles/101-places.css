@@ -95,11 +95,15 @@
   padding: 0px;
 }
 
-.amenities ul li,
-.reviews ul li {
+.amenities ul li {
   list-style: none;
   padding: 10px;
   margin-left: 40px;
+}
+.reviews ul li {
+  list-style: none;
+  padding: 10px 0px;
+  text-align: left;
 }
 .tv_icon {
   background: url("../images/icon_tv.png") no-repeat left;
